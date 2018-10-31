@@ -6,6 +6,7 @@ const path = '/home/hnakxr/PhenoPadWebsite/'
 
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(express.static(__dirname + '/vendor'));
+app.use(express.static(__dirname));
 app.get('/', function(req, res) {
     res.send(__dirname+'/index.html');
 });
