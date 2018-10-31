@@ -6,6 +6,6 @@ const path = '/home/hnakxr/PhenoPadWebsite/'
 
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.get('/', function(req, res) {
-    res.send(__dirname+'index.html');
+    res.send(__dirname+'../index.html');
 });
 app.listen(port, () => console.log(`App listening on port ${port}!`))
