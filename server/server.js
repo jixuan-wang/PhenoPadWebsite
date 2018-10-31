@@ -2,5 +2,7 @@ const express = require('express')
 const app = express()
 const port = 7000
 
-app.get('/', (req, res) => res.send('Welcome'))
+app.get('/', function(req, res) {
+    res.sendFile(path.join('../index.html'));
+});
 app.listen(port, () => console.log(`App listening on port ${port}!`))
