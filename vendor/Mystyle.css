@@ -1,0 +1,19 @@
+.motivation{
+    background-image: linear-gradient(to right, rgb(22, 155, 196) , yellow);
+}
+.pp-logo{
+    opacity: .95;
+    image-rendering: auto;
+}
+.jumbotron{
+    padding: 0;
+}
+.bg-primary{
+    background-image: linear-gradient(to right, rgb(22, 155, 196) , yellow);
+}
+.contact{
+    color: aliceblue;
+}
+.feature{
+    background-image: url("img/bg-cta.jpg");
+}
