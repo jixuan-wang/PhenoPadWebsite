@@ -19,7 +19,7 @@
 }
 .parallax {
     /* The image used */
-    background-image: url("img/bg-cta.jpg");
+    /* background-image: url("img/bg-cta.jpg"); */
 
     /* Set a specific height */
     min-height: 500px; 
@@ -29,4 +29,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.speech{
+    background-image:  linear-gradient(to right,#45e0d8 ,#4167f2);
+}
+.fixed-height{
+    height: 500px;
 }

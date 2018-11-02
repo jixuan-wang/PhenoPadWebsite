@@ -50,7 +50,7 @@
       </div>
     </nav>
 
-    <header class="masthead shadow-sm">
+    <header class="parallax masthead shadow-sm ">
       <div class="container h-100 ">
         <div class="row w-100 h-100">
           <div class="col" ></div>
@@ -66,7 +66,7 @@
       </div>
     </header>
 
-    <section class="motivation pt-3 pb-3 shadow-sm " id="motivation">
+    <section class="motivation pt-0 pb-0" id="motivation">
       <div class="container">
           <div class="row">
               <div class="col-6">
@@ -74,10 +74,10 @@
                 <img src="./img/phenopad-logo.png" class="img-fluid pp-logo"/>
                 </div>
               </div>
-              <div class="col-5 shadow p-3 ml-auto bg-white rounded">
+              <div class="col-5 p-3 ml-auto bg-white">
                   <div class="jumbotron jumbotron-fluid bg-white my-auto">
                       <div class="container col-lg-10 mt-5">
-                        <h2 class="display-4">Motivation</h2>
+                        <!-- <h2 class="display-4">Motivation</h2> -->
                         <p class="ml-2">For every hour that physicians spend on direct patient care, they spend 2 hours on administrative tasks and EHR documentations.</p> 
                         <p class="ml-2">This causes growing dissatisfaction and burnout amount physicians, decreasing the quality of care that they are able to provide to patients.</p>
                         <p class="ml-2">The goal of the PhenoPad project is to provide convenient and efficient clinical note taking during physician-patient interactions through the use of AI.</p>
@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="features h-100" id="features">
+    <section class="features mb-2" id="features">
       <div class="container">
         <!-- description header -->
         <div class="section-heading text-center mb-2">
@@ -102,7 +102,19 @@
                 <div class="device-mockup surface landscape">
                   <div class="device">
                     <div class="screen">
-                      <img src="img/phenopad/pp1.png" width="100%" class="img-fluid" alt="">
+                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/phenopad/slide1.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/phenopad/slide2.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/phenopad/slide3.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="button">
                     </div>
@@ -139,47 +151,37 @@
       <div class="container h-100">
                 <!-- HWR SECTION -->
                 <div class="row mx-auto">
-                    <div class="col-4"> 
-                        <div class="jumbotron jumbotron-fluid h-100 rounded shadow p-5">
+                    <div class="col-4 h-100"> 
+                        <div class="jumbotron jumbotron-fluid h-100 rounded shadow pt-3 pl-5 pr-5 pb-3">
                           <div class="container pt-5">
                           <h3>Handwriting Recognition</h3>
                           <hr>
-                          <p class="pt-3">Captures written scripts and processes them with medical language model. Abbreviation detection and disambiguation using deep learning.</p>
-                         </div>
+                          <p class="pt-3">Captures written scripts and processes them with medical language model.</p>
+                          <p class="pt-3">Abbreviation detection and disambiguation using deep learning.</p>
+                        </div>
                         </div>
                       
                     </div>
-                    <div class="col-lg-8">
-                        <div id="carouselExampleIndicators" class="carousel slide shadow rounded" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/phenopad/pp1.png" alt="First slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>...</h5>
-                                    <p>...</p>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="img/phenopad/pp1.png" alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="img/phenopad/pp1.png" alt="Third slide">
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
+                    <div class="col-lg-8 bg-white h-100 rounded shadow p-5" >
+                        <figure class="figure mb-5">
+                            <img src="img/phenopad/7.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                            <figcaption class="figure-caption">Notepage panel overview, along with add-in control for annotations.</figcaption>
+                          </figure>
+                        <figure class="figure mb-5">
+                            <img src="img/phenopad/1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                            <figcaption class="figure-caption">Detects medical term abbreviations and selects top candidate based on local context. </figcaption>
+                          </figure>
+                        <figure class="figure mb-5">
+                            <img src="img/phenopad/pp1.png" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                            <figcaption class="figure-caption">Use natural language processing to do text mining on collected data for medical term recognition. </figcaption>
+                          </figure>
+                          <figure class="figure mb-5">
+                              <img src="img/phenopad/2.jpg" width="49%" class=" img-fluid rounded img-thumbnail" alt="...">
+                              <img src="img/phenopad/3.jpg" width="49%" class=" img-fluid rounded img-thumbnail" alt="...">
+                              <figcaption class="figure-caption">Insert an add-in to draw pedigree diagram, import local image and take a photo for annotations.</figcaption>
+                            </figure>
+                          
+
                     </div>
                       
                   </div>
@@ -187,48 +189,28 @@
 
     </section>
 
-    <section class="cta" id="Speech">
-        <div class="container h-100">
+    <section class="speech" id="Speech">
+        <div class="container h-100 ">
                   <!-- HWR SECTION -->
                   <div class="row p-2">
-                      <div class="col-lg-8">
-                        <div id="carouselExampleIndicatorsSpeech" class="carousel slide shadow rounded" data-ride="carousel">
-                          <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicatorsSpeech" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicatorsSpeech" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicatorsSpeech" data-slide-to="2"></li>
-                          </ol>
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img class="d-block w-100" src="img/phenopad/pp1.png" alt="First slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                  <h5>...</h5>
-                                  <p>...</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                              <img class="d-block w-100" src="img/phenopad/pp1.png" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                              <img class="d-block w-100" src="img/phenopad/pp1.png" alt="Third slide">
-                            </div>
-                          </div>
-                          <a class="carousel-control-prev" href="#carouselExampleIndicatorsSpeech" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="carousel-control-next" href="#carouselExampleIndicatorsSpeech" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </div>
+                      <div class="col-lg-8 bg-white h-100 rounded shadow p-5">
+                          <figure class="figure mb-5">
+                              <img src="img/phenopad/8.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                              <figcaption class="figure-caption">Display realtime speech conversation during a session and detects medical term based on transcript.</figcaption>
+                            </figure>
+                          <figure class="figure mb-5">
+                              <img src="img/phenopad/4.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                              <figcaption class="figure-caption">Saves past conversation's records for refernce.</figcaption>
+                            </figure>
+
+
                       </div>
-                      <div class="col-4"> 
+                      <div class="col-4 h-100"> 
                           <div class="jumbotron jumbotron-fluid rounded shadow p-5">
                             <div class="container ml-auto mr-auto pt-5">
                             <h3>Speech Recognition</h3>
                             <hr>
-                            <p class="pt-3">Speech processing using medical language model and speaker identification using deep learning. Text-mining on collected data for medical term recognition.</p>
+                            <p class="pt-3">Speech processing using medical language model and speaker identification using deep learning.</p>
                            </div>
                           </div>
                       </div>
@@ -237,11 +219,11 @@
   
       </section>
     
-      <section class="cta shadow-sm" id="CDS">
+      <section class="cta parallax shadow-sm" id="CDS">
           <div class="container h-100">
                     <!-- HWR SECTION -->
                     <div class="row w-100">
-                        <div class="col-4"> 
+                        <div class="col-4 h-100"> 
                             <div class="jumbotron jumbotron-fluid h-100 w-100 rounded shadow p-5">
                               <div class="container ml-auto mr-auto pt-5">
                               <h3>Clinical Decision Support</h3>
@@ -254,37 +236,16 @@
                             </div>
                           
                         </div>
-                        <div class="col-lg-8">
-                            <div id="carouselExampleIndicatorsCDS" class="carousel slide shadow rounded" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                  <li data-target="#carouselExampleIndicatorsCDS" data-slide-to="0" class="active"></li>
-                                  <li data-target="#carouselExampleIndicatorsCDS" data-slide-to="1"></li>
-                                  <li data-target="#carouselExampleIndicatorsCDS" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/phenopad/pp1.png" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>...</h5>
-                                        <p>...</p>
-                                      </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/phenopad/pp1.png" alt="Second slide">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/phenopad/pp1.png" alt="Third slide">
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleIndicatorsCDS" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleIndicatorsCDS" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </div>
+                        <div class="col-lg-8 bg-white h-100 rounded shadow p-5">
+                            <figure class="figure mb-5">
+                                <img src="img/phenopad/5.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                <figcaption class="figure-caption">Users can also view all collected medical terms from speech and notes, 
+                                  along with clinical decision support on the overview page.</figcaption>
+                              </figure>
+                            <figure class="figure mb-5">
+                                <img src="img/phenopad/9.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                <figcaption class="figure-caption">View detailed information about a certain phenotype or disease by clicking on the "..." button. </figcaption>
+                              </figure>
                         </div>
                           
                       </div>
@@ -318,9 +279,9 @@
             <hr>
             <br>
             <h3>Address</h3>
-            <p>University of Toronto - St. George<br> 27 King's College Cir, Toronto <br> ON M5S 3H7</p>
+            <p> D.L. Pratt Building <br> University of Toronto - St. George<br> 6 King's College Road, Toronto <br> ON M5S 3H5</p>
           </div>
-          <div class="col-4 mx-auto">
+          <!-- <div class="col-4 mx-auto">
             <form>
                 <div class="form-group">
                     <label>Email address</label>
@@ -336,7 +297,7 @@
                     </div>
                 <button type="submit" class="btn btn-primary btn-outline-light">Submit</button>            
               </form>
-          </div>
+          </div> -->
 
         </div>
 
