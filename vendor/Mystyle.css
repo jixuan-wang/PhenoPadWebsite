@@ -17,6 +17,9 @@
 .feature{
     background-image: url("img/bg-cta.jpg");
 }
+.features{
+    background-color: #fcfcfc;
+}
 .parallax {
     /* The image used */
     /* background-image: url("img/bg-cta.jpg"); */
@@ -35,4 +38,16 @@
 }
 .fixed-height{
     height: 500px;
+}
+.intro p{
+    font-size: 12pt;
+}
+.intro h1{
+    font-weight: bolder;
+}
+.intro li{
+    font-size:11pt;
+}
+.bg-black{
+    background-color: black;
 }
