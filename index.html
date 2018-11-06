@@ -88,129 +88,162 @@
       </div>
     </section>
 
-    <section class="features">
-      <div class="container">
-          <h1 class="display-4 intro pl-5">PhenoPad</h1>
+    <section class="features shadow-lg">
+      <div class="container ">
           <div class="row">
-            <div class="col intro mb-3 ">
-              <div class="jumbotron jumbotron-fluid p-5 bg-white rounded shadow-sm my-auto">
-              <p>An application that is easy to use and allows clinicians to capture patient notes. It provides AI-based note taking services which improve the quality of patient-physician interaction by:</p>
-              <ul>
-              <li>Capturing everything during a session: notes,speech, and video</li>
-              <li>Generating records that are easy to browse</li>
-              <li>Locating important information automatically</li>
-              <li>Doing clinical decision support on the fly</li>
+                <div class="card pl-0 pr-0 bg-white rounded shadow-sm mb-3">
+                    <div id="carouselExampleIndicators" class="carousel slide rounded" data-ride="carousel" style="height: 400">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="img/phenopad/slide0.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item rounded">
+                                <img class="d-block w-100" src="img/phenopad/slide1.jpg" alt="Second slide">
+                              </div>
+                            <div class="carousel-item rounded">
+                              <img class="d-block w-100" src="img/phenopad/slide2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item rounded">
+                              <img class="d-block w-100" src="img/phenopad/slide3.jpg" alt="Third slide">
+                            </div>
+                          </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    <div class="card-body">
+                      <div class="jumbotron jumbotron-fluid p-5 bg-white my-auto">
+                          <p><b style="color: #3e7bdd">PhenoPad</b> is an application that is easy to use and 
+                            allows clinicians to capture patient notes. It provides <b style="color: #3e7bdd">AI-based</b> note taking services 
+                            which improve the quality of patient-physician interaction by:</p>
+                          <ul>
+                          <li>Capturing everything during a session: notes,speech, and video</li>
+                          <li>Generating records that are easy to browse</li>
+                          <li>Locating important information automatically</li>
+                          <li>Doing clinical decision support on the fly</li>
+                          <li>All data processing are done in realtime</li>
+            
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-3 col-md-6 mb-4 ">
+                                <div class="card " style="width: 16rem; height: 22rem;">
+                                    <div class="card-body">
+                                        <div class="col feature-item p-3">
+                                            <i class="fas fa-pencil-alt"></i> 
+                                          </div>
+                                      <h5 class="card-title" style="font-weight:500">Hand Writing Recognition</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Captures written scripts, abbreviation detection and disambiguation using deep learning. Then processes them with medical language model.</h6>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4 ">
+                                <div class="card " style="width: 16rem;height: 22rem;">
+                                    <div class="card-body">
+                                        <div class="col feature-item p-3">
+                                            <i class="fas fa-microphone-alt"></i>
+                                        </div>
+                                      <h5 class="card-title" style="font-weight:500">Speech Recognition and Identification</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Speech audio processing using medical language model and identifies different speakers using deep learning approach.</h6>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card " style="width: 16rem;height: 22rem;">
+                                    <div class="card-body">
+                                        <div class="col feature-item p-3">
+                                            <i class="fas fa-code-branch"></i>
+                                      </div>
+                                      <h5 class="card-title" style="font-weight:500">Natural Language Processing</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Text mining on collected note data for medical term recognition.</h6>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card " style="width: 16rem;height: 22rem;">
+                                    <div class="card-body">
+                                        <div class="col feature-item p-3">
+                                            <i class="fas fa-notes-medical"></i>
+                                      </div>
+                                      <h5 class="card-title" style="font-weight:500">Clinical Decision Support</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Provides differential diagnosis on diseases and phenotype suggestions based on local context.</h6>
+                                    </div>
+                                  </div>
+                            </div>
+                            </div>
+                    </div>
+                  </div>
 
-                </ul>
-            </div>
-            </div>
-            <div class="col-lg-8 pl-0 pr-0 pt-3 bg-black rounded shadow-sm mb-3">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img class="d-block w-100" src="img/phenopad/slide0.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="img/phenopad/slide1.jpg" alt="Second slide">
-                          </div>
-                        <div class="carousel-item">
-                          <img class="d-block w-100" src="img/phenopad/slide2.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                          <img class="d-block w-100" src="img/phenopad/slide3.jpg" alt="Third slide">
-                        </div>
-                      </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
                   
-            </div>
           </div>
-          <div class="row mt-4">
-            <div class="col-lg-3 col-md-6 mb-4 ">
-                <div class="card shadow-sm" style="width: 16rem; height: 23rem;">
-                    <div class="card-body">
-                        <div class="col feature-item p-3">
-                            <i class="fas fa-pencil-alt"></i> 
-                          </div>
-                      <h5 class="card-title" style="font-weight:500">Hand Writing Recognition</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Captures written scripts, abbreviation detection and disambiguation using deep learning. Then processes them with medical language model.</h6>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4 ">
-                <div class="card shadow-sm" style="width: 16rem;height: 23rem;">
-                    <div class="card-body">
-                        <div class="col feature-item p-3">
-                            <i class="fas fa-microphone-alt"></i>
-                        </div>
-                      <h5 class="card-title" style="font-weight:500">Speech Recognition and Identification</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Speech audio processing using medical language model and identifies different speakers using deep learning approach.</h6>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card shadow-sm" style="width: 16rem;height: 23rem;">
-                    <div class="card-body">
-                        <div class="col feature-item p-3">
-                            <i class="fas fa-code-branch"></i>
-                      </div>
-                      <h5 class="card-title" style="font-weight:500">Natural Language Processing</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Text mining on collected note data for medical term recognition.</h6>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card shadow-sm" style="width: 16rem;height: 23rem;">
-                    <div class="card-body">
-                        <div class="col feature-item p-3">
-                            <i class="fas fa-notes-medical"></i>
-                      </div>
-                      <h5 class="card-title" style="font-weight:500">Clinical Decision Support</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Provides differential diagnosis on diseases and phenotype suggestions based on local context.</h6>
-                    </div>
-                  </div>
-            </div>
-            </div>
 
       </div>
     </section>
 
-
+    <!-- HWR SECTION -->
     <section class="cta pt-4 pb-4 parallax" id="HWR">
-      <div class="container mt-0 pt-0 h-100">
-                <!-- HWR SECTION -->
+      <div class="container mt-0 pt-0 h-100">      
                 <div class="row mx-auto">
-                    </div>
                     <div class="col bg-white h-100 rounded shadow p-5" >
-                        <figure class="figure mb-5">
-                            <img src="img/phenopad/7.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
-                            <figcaption class="figure-caption">Notepage panel overview, along with add-in control for annotations.</figcaption>
-                          </figure>
-                        <figure class="figure mb-5">
-                            <img src="img/phenopad/1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
-                            <figcaption class="figure-caption">Detects medical term abbreviations and selects top candidate based on local context. </figcaption>
-                          </figure>
-                        <figure class="figure mb-5">
-                            <img src="img/phenopad/pp1.png" class="figure-img img-fluid rounded img-thumbnail" alt="...">
-                            <figcaption class="figure-caption">Use natural language processing to do text mining on collected data for medical term recognition. </figcaption>
-                          </figure>
-                          <figure class="figure mb-5">
-                              <img src="img/phenopad/2.jpg" width="49%" class=" img-fluid rounded img-thumbnail" alt="...">
-                              <img src="img/phenopad/3.jpg" width="49%" class=" img-fluid rounded img-thumbnail" alt="...">
-                              <figcaption class="figure-caption">Insert an add-in to draw pedigree diagram, import local image and take a photo for annotations.</figcaption>
-                            </figure>
+                      <div class="row p-3">
+                          <h3 style="font-weight: 500">Hand Writing Recognition</h3>
+                      </div>
+                        <div class="row h-100">
+                              <div class="col" >
+                                  <figure class="figure mb-5">
+                                      <img src="img/phenopad/hwr.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                      <figcaption class="figure-caption">Selects a line of script and auto-recognizes based on collection of strokes. Automatically displays extended form of abbreviations. </figcaption>
+                                    </figure>
+                                    <div class="row">
+                                        <div class="col">
+                                            <figure class="figure mb-5">
+                                                <img src="img/phenopad/ab1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                                <figcaption class="figure-caption">Detection based on local context, a single "ca" term will result in "cardiac arrest".</figcaption>
+
+                                              </figure>    
+                                        </div>
+                                        <div class="col">
+                                            <figure class="figure mb-5">
+                                                <img src="img/phenopad/ab2.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                                <figcaption class="figure-caption">Changing the local context by adding "breast" will update the abbreviation to "breast cancer". </figcaption>
+
+                                              </figure>    
+                                          </div>
+
+                                      </div>
+
+                              </div>
+
+                              <div class="col" >
+                                  <div class="col">
+                                      <figure class="figure mb-5">
+                                          <img src="img/phenopad/nlphwr.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                          <figcaption class="figure-caption">Use natural language processing to do text mining on collected data for medical term recognition. </figcaption>
+                                        </figure>        
+                                  </div>
+                                </div>
+
+
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-10 mx-auto">
+                            <figure class="figure mb-5">
+                                <img src="img/phenopad/hwrDiagram.png" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption text-center">HWR Workflow </figcaption>
+                              </figure>
+                              </div>
+                        </div>
+
                           
 
                     </div>
@@ -219,49 +252,99 @@
         </div>
 
     </section>
-
-    <section class="speech" id="Speech">
-        <div class="container h-100 ">
-                  <!-- HWR SECTION -->
-                  <div class="row p-2">
-                      <div class="col bg-white h-100 rounded shadow p-5">
+    <!-- SPEECH SECTION -->
+    <section class="speech shadow" id="Speech">
+      <div class="container mt-0 pt-0 h-100">      
+        <div class="row mx-auto">
+            <div class="col bg-white h-100 rounded shadow p-5" >
+              <div class="row p-3">
+                  <h3 style="font-weight: 500">Speech Recognition and Speaker Identification</h3>
+              </div>
+                <div class="row">
+                      <div class="col-3" >
                           <figure class="figure mb-5">
-                              <img src="img/phenopad/8.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
-                              <figcaption class="figure-caption">Display realtime speech conversation during a session and detects medical term based on transcript.</figcaption>
+                              <img src="img/phenopad/speech1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                              <figcaption class="figure-caption">Realtime conversation preview </figcaption>
                             </figure>
-                          <figure class="figure mb-5">
-                              <img src="img/phenopad/4.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
-                              <figcaption class="figure-caption">Saves past conversation's records for refernce.</figcaption>
-                            </figure>
+                      </div>
+                      <div class="col">  
+                        <!-- <p class="p-3" style="font-size: 13pt;"> While recording a session, PhenoPad tracks the positions of different speakers through an external microphone array,
+                          and identifies each speaker with a label including all information regarding to a certain audio segment. 
+                        </p> -->
+                        <div class="row">
+                          <div class="col">
+                              <figure class="figure mb-5">
+                                  <img src="img/phenopad/speech2.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                  <figcaption class="figure-caption">Saves a record for all past conversations for future reference</figcaption>
+                                </figure>
+                          </div>
+                          <div class="col-4">
+                              <figure class="figure mb-5">
+                                  <img src="img/phenopad/speech3.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                  <figcaption class="figure-caption">Natural Language Processing API to seach for Phenotypes</figcaption>
+                                </figure>
+                          </div>
 
+
+                        </div>
+                        <div class="row"></div>
 
                       </div>
+                </div>
+
+                  
+
+            </div>
+              
           </div>
+</div>
   
       </section>
-    
-      <section class="cta parallax shadow-sm" id="CDS">
-          <div class="container h-100">
-                    <!-- HWR SECTION -->
-                    <div class="row w-100">
-                          
-                        </div>
-                        <div class="col bg-white h-100 rounded shadow p-5">
-                            <figure class="figure mb-5">
-                                <img src="img/phenopad/5.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
-                                <figcaption class="figure-caption">Users can also view all collected medical terms from speech and notes, 
-                                  along with clinical decision support on the overview page.</figcaption>
-                              </figure>
-                            <figure class="figure mb-5">
-                                <img src="img/phenopad/9.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
-                                <figcaption class="figure-caption">View detailed information about a certain phenotype or disease by clicking on the "..." button. </figcaption>
-                              </figure>
-                        </div>
-                          
+    <!-- CLINICAL DECISION SUPPORT -->
+    <section class="cta pt-5 parallax shadow-sm" id="CDS">
+        <div class="container mt-0 pt-0 h-100">      
+            <div class="row mx-auto">
+                <div class="col bg-white h-100 rounded shadow p-5" >
+                  <div class="row p-3">
+                      <h3 style="font-weight: 500">Clinical Decision Support</h3>
+                  </div>
+                    <div class="row h-100">
+                          <div class="col-4" >
+                              <figure class="figure mb-5">
+                                  <img src="img/phenopad/cds1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                  <figcaption class="figure-caption">Quickview of saved phenotypes and results of clinical decision support on side panel</figcaption>
+                                </figure>
+                          </div>
+                          <div class="col">
+                              <figure class="figure mb-5">
+                                  <img src="img/phenopad/cds3.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                                  <figcaption class="figure-caption">Overview Panel for all saved phenotypes, phenotype suggestions and clinical decision support</figcaption>
+                                </figure>
+
+                          </div>
+
+
+
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                          <figure class="figure mb-5">
+                              <img src="img/phenopad/CDSDiagram.png" class="figure-img img-fluid rounded" alt="...">
+                            </figure>
                       </div>
-            </div>
-    
-        </section>
+                      <div class="col">
+                          <figure class="figure mb-5">
+                              <img src="img/phenopad/cds2.jpg" class="figure-img img-fluid rounded" alt="...">
+                              <figcaption class="figure-caption">Connects to external API to view detailed information of each clinical differential</figcaption>
+                            </figure>
+                        
+                        </div>
+                    </div>
+                </div>
+                  
+              </div>
+    </div>
+      </section>
 
 
 
