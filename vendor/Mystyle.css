@@ -14,7 +14,7 @@
 }
 
 .feature{
-    background-image: url("img/bg-cta.jpg");
+    /* background-image: url("img/bg-cta.jpg"); */
 }
 .features{
     background-color: #fcfcfc;
@@ -32,10 +32,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.speech{
-    background-image:  linear-gradient(to right,#45e0d8 ,#4167f2);
-    margin: 0;
-}
+
 .fixed-height{
     height: 500px;
 }
@@ -68,4 +65,20 @@
 .contact-card h3{
     color:#37383a;
     font-weight: 400;
+}
+.linker{
+    background-color: transparent;
+    background-image: none;
+}
+.hwr{
+    background-color: rgb(207, 224, 247);
+}
+.speech{
+    background-color: #fcfcfc;
+}
+.cds{
+    background-color: rgb(207, 224, 247);
+}
+.extra{
+    background-color: #fcfcfc;
 }
