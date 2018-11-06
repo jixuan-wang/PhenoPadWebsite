@@ -12,9 +12,7 @@
 .bg-primary{
     background-image: linear-gradient(to right, rgb(22, 155, 196) , yellow);
 }
-.contact{
-    color: aliceblue;
-}
+
 .feature{
     background-image: url("img/bg-cta.jpg");
 }
@@ -57,3 +55,17 @@
     width:100%;
     max-height: 500px !important;
   }
+.contact-card{
+    background-color: #fcfcfc;
+}
+.contact{
+    color:aliceblue;
+}
+.contact-card p{
+    color:#37383a;
+    font-size:12pt;
+}
+.contact-card h3{
+    color:#37383a;
+    font-weight: 400;
+}
