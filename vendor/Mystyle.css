@@ -14,11 +14,9 @@
 }
 
 .feature{
-    /* background-image: url("img/bg-cta.jpg"); */
+    background-image: url("img/bg-cta.jpg"); 
 }
-.features{
-    background-color: #fcfcfc;
-}
+
 .parallax {
     /* The image used */
     /* background-image: url("img/bg-cta.jpg"); */
@@ -70,15 +68,58 @@
     background-color: transparent;
     background-image: none;
 }
+.features{
+    background-color: rgb(255, 255, 255);
+}
 .hwr{
-    background-color: rgb(207, 224, 247);
+    background-color: #f1efef;
 }
 .speech{
-    background-color: #fcfcfc;
+    background-color: rgb(255, 255, 255);
 }
 .cds{
-    background-color: rgb(207, 224, 247);
+    background-color: #f1efef;
 }
 .extra{
-    background-color: #fcfcfc;
+    background-color: rgb(255, 255, 255);
 }
+.display-5{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(58, 58, 99) !important;
+    font-size: 30pt;
+}
+.text-light{
+    color:rgb(116, 117, 148) !important;
+    font-size: 12pt;
+    font-family: 'Rubik';
+    letter-spacing: 0pt;
+    font-weight: 100;
+}
+p.header-caption{
+    font-family: 'Bad Script','cursive' !important;
+    font-size: 20pt; 
+    font-weight: lighter;
+}
+.container-sm{
+    width: 90% !important;
+    align-content: center;
+    display: block;
+}
+.intro{
+    background-image: url("img/bg-cta.jpg") !important;
+}
+.card-subtitle{
+    font-family: 'Open Sans Condensed' !important;
+    font-weight: lighter !important;
+    font-size: 13 pt !important;
+    margin-top: 5pt;
+    letter-spacing: 0pt;
+    text-align: left;
+}
+.card-title{
+    font-family: 'Rubik' !important;
+    color: rgb(58, 58, 99) !important;
+    font-weight: bold;
+}
+
+

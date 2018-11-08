@@ -25,10 +25,10 @@
     target: '#mainNav',
     offset: 54
   });
-
+  var window_height = $(window).height;
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset().top > window_height) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
