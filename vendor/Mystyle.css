@@ -94,12 +94,12 @@
 .text-light{
     color:rgb(116, 117, 148) !important;
     font-size: 12pt;
-    font-family: 'Rubik';
+    font-family: Raleway;
     letter-spacing: 0pt;
     font-weight: 100;
 }
 p.header-caption{
-    font-family: 'Bad Script','cursive' !important;
+    font-family: "Bad Script" !important;
     font-size: 20pt; 
     font-weight: lighter;
 }
