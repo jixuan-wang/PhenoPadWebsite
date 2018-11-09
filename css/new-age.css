@@ -68,11 +68,11 @@ section h2 {
   font-family: "Roboto";
   font-weight: 200;
   letter-spacing: 1px;
-  height: 35pt !important;
 }
 
+
 #mainNav .navbar-brand {
-  color: #ffffff;
+  color: #222222;
   font-family: "Roboto";
   font-weight: 200;
   letter-spacing: 1px;
@@ -114,25 +114,26 @@ section h2 {
   color: #0f7bd3;
 }
 
+/* media query for nav bar with width >= 992px */
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: fade(white, 70%);
+    color: rgba(255, 255, 255, 0.0);
     font-family: "Roboto";
   }
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-    color: rgb(148, 207, 241);
+    color: rgb(229, 238, 243);
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0);
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
-    color: #0f7bd3;
+    color: #e5edf3;
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
@@ -161,12 +162,13 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background: url("../img/bg-pattern.png"), linear-gradient(to top, #41c6e7, #17328b);
+  /* background: url("../img/bg-pattern.png"), #7b4397;*/
+  background: url("../img/bg-pattern.png"), linear-gradient(to right bottom, #4568dc , #b06ab3);
+  /* background: url("../img/bg-pattern.png"), linear-gradient(to right bottom, #a83afc, #4389d8); */
   background-attachment: fixed;
   /* transform: translate3d(0, 0, 0); */
 }
+
 
 header.masthead .header-content {
   max-width: 500px;
@@ -183,7 +185,6 @@ header.masthead .header-content:before{
   position: fixed;
 }
 
-
 header.masthead .header-content h1 {
   font-size: 30px;
 }
@@ -198,6 +199,7 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
+/* media query for header */
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -296,7 +298,7 @@ section.features .feature-item i {
   display: block;
   margin-bottom: 15px;
   background: -webkit-gradient(linear, right top, left top, from(#41c6e7), to(#17328b));
-  background: linear-gradient(to left, #41c6e7, #17328b);
+  background-image: linear-gradient(to right bottom, rgb(25, 178, 216) , rgb(195, 243, 23)) !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -438,7 +440,18 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background-color: white;
   font-weight: bold;
 }
+.btn-outline-black {
+  color: rgb(23, 12, 36);
+  border: 1px solid;
+  border-color: rgb(23, 12, 36);
+}
 
+.btn-outline-black:hover, .btn-outline-black:focus, .btn-outline-black:active, .btn-outline-black.active {
+  color: white;
+  border-color: rgb(12, 7, 32);
+  background-color: rgb(12, 7, 32);
+  font-weight: bold;
+}
 .btn {
   border-radius: 300px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
