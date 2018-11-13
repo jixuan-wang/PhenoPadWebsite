@@ -275,172 +275,172 @@
 			/**
 			 * Touch navigation
 			 */
-			// gesture : function () {
+			gesture : function () {
 
-			// 	var $this = this,
-			// 		index,
-			// 		hDistance,
-			// 		vDistance,
-			// 		hDistanceLast,
-			// 		vDistanceLast,
-			// 		hDistancePercent,
-			// 		vSwipe = false,
-			// 		hSwipe = false,
-			// 		hSwipMinDistance = 30,
-			// 		vSwipMinDistance = 50,
-			// 		startCoords = {},
-			// 		endCoords = {},
-			// 		bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' ),
-			// 		slider = $( '#swipebox-slider' );
+				var $this = this,
+					index,
+					hDistance,
+					vDistance,
+					hDistanceLast,
+					vDistanceLast,
+					hDistancePercent,
+					vSwipe = false,
+					hSwipe = false,
+					hSwipMinDistance = 30,
+					vSwipMinDistance = 50,
+					startCoords = {},
+					endCoords = {},
+					bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' ),
+					slider = $( '#swipebox-slider' );
 
-			// 	bars.addClass( 'visible-bars' );
-			// 	$this.setTimeout();
+				bars.addClass( 'visible-bars' );
+				$this.setTimeout();
 
-			// 	$( 'body' ).bind( 'touchstart', function( event ) {
+				$( 'body' ).bind( 'touchstart', function( event ) {
 
-			// 		$( this ).addClass( 'touching' );
-			// 		index = $( '#swipebox-slider .slide' ).index( $( '#swipebox-slider .slide.current' ) );
-			// 		endCoords = event.originalEvent.targetTouches[0];
-			// 		startCoords.pageX = event.originalEvent.targetTouches[0].pageX;
-			// 		startCoords.pageY = event.originalEvent.targetTouches[0].pageY;
+					$( this ).addClass( 'touching' );
+					index = $( '#swipebox-slider .slide' ).index( $( '#swipebox-slider .slide.current' ) );
+					endCoords = event.originalEvent.targetTouches[0];
+					startCoords.pageX = event.originalEvent.targetTouches[0].pageX;
+					startCoords.pageY = event.originalEvent.targetTouches[0].pageY;
 
-			// 		$( '#swipebox-slider' ).css( {
-			// 			'-webkit-transform' : 'translate3d(' + currentX +'%, 0, 0)',
-			// 			'transform' : 'translate3d(' + currentX + '%, 0, 0)'
-			// 		} );
+					$( '#swipebox-slider' ).css( {
+						'-webkit-transform' : 'translate3d(' + currentX +'%, 0, 0)',
+						'transform' : 'translate3d(' + currentX + '%, 0, 0)'
+					} );
 
-			// 		$( '.touching' ).bind( 'touchmove',function( event ) {
-			// 			event.preventDefault();
-			// 			event.stopPropagation();
-			// 			endCoords = event.originalEvent.targetTouches[0];
+					$( '.touching' ).bind( 'touchmove',function( event ) {
+						event.preventDefault();
+						event.stopPropagation();
+						endCoords = event.originalEvent.targetTouches[0];
 
-			// 			if ( ! hSwipe ) {
-			// 				vDistanceLast = vDistance;
-			// 				vDistance = endCoords.pageY - startCoords.pageY;
-			// 				if ( Math.abs( vDistance ) >= vSwipMinDistance || vSwipe ) {
-			// 					var opacity = 0.75 - Math.abs(vDistance) / slider.height();
+						if ( ! hSwipe ) {
+							vDistanceLast = vDistance;
+							vDistance = endCoords.pageY - startCoords.pageY;
+							if ( Math.abs( vDistance ) >= vSwipMinDistance || vSwipe ) {
+								var opacity = 0.75 - Math.abs(vDistance) / slider.height();
 
-			// 					slider.css( { 'top': vDistance + 'px' } );
-			// 					slider.css( { 'opacity': opacity } );
+								slider.css( { 'top': vDistance + 'px' } );
+								slider.css( { 'opacity': opacity } );
 
-			// 					vSwipe = true;
-			// 				}
-			// 			}
+								vSwipe = true;
+							}
+						}
 
-			// 			hDistanceLast = hDistance;
-			// 			hDistance = endCoords.pageX - startCoords.pageX;
-			// 			hDistancePercent = hDistance * 100 / winWidth;
+						hDistanceLast = hDistance;
+						hDistance = endCoords.pageX - startCoords.pageX;
+						hDistancePercent = hDistance * 100 / winWidth;
 
-			// 			if ( ! hSwipe && ! vSwipe && Math.abs( hDistance ) >= hSwipMinDistance ) {
-			// 				$( '#swipebox-slider' ).css( {
-			// 					'-webkit-transition' : '',
-			// 					'transition' : ''
-			// 				} );
-			// 				hSwipe = true;
-			// 			}
+						if ( ! hSwipe && ! vSwipe && Math.abs( hDistance ) >= hSwipMinDistance ) {
+							$( '#swipebox-slider' ).css( {
+								'-webkit-transition' : '',
+								'transition' : ''
+							} );
+							hSwipe = true;
+						}
 
-			// 			if ( hSwipe ) {
+						if ( hSwipe ) {
 
-			// 				// swipe left
-			// 				if ( 0 < hDistance ) {
+							// swipe left
+							// if ( 0 < hDistance ) {
 
-			// 					// first slide
-			// 					if ( 0 === index ) {
-			// 						// console.log( 'first' );
-			// 						$( '#swipebox-overlay' ).addClass( 'leftSpringTouch' );
-			// 					} else {
-			// 						// Follow gesture
-			// 						$( '#swipebox-overlay' ).removeClass( 'leftSpringTouch' ).removeClass( 'rightSpringTouch' );
-			// 						$( '#swipebox-slider' ).css( {
-			// 							'-webkit-transform' : 'translate3d(' + ( currentX + hDistancePercent ) +'%, 0, 0)',
-			// 							'transform' : 'translate3d(' + ( currentX + hDistancePercent ) + '%, 0, 0)'
-			// 						} );
-			// 					}
+							// 	// first slide
+							// 	if ( 0 === index ) {
+							// 		// console.log( 'first' );
+							// 		$( '#swipebox-overlay' ).addClass( 'leftSpringTouch' );
+							// 	} else {
+							// 		// Follow gesture
+							// 		$( '#swipebox-overlay' ).removeClass( 'leftSpringTouch' ).removeClass( 'rightSpringTouch' );
+							// 		$( '#swipebox-slider' ).css( {
+							// 			'-webkit-transform' : 'translate3d(' + ( currentX + hDistancePercent ) +'%, 0, 0)',
+							// 			'transform' : 'translate3d(' + ( currentX + hDistancePercent ) + '%, 0, 0)'
+							// 		} );
+							// 	}
 
-			// 				// swipe rught
-			// 				} else if ( 0 > hDistance ) {
+							// // swipe rught
+							// } else if ( 0 > hDistance ) {
 
-			// 					// last Slide
-			// 					if ( elements.length === index +1 ) {
-			// 						// console.log( 'last' );
-			// 						$( '#swipebox-overlay' ).addClass( 'rightSpringTouch' );
-			// 					} else {
-			// 						$( '#swipebox-overlay' ).removeClass( 'leftSpringTouch' ).removeClass( 'rightSpringTouch' );
-			// 						$( '#swipebox-slider' ).css( {
-			// 							'-webkit-transform' : 'translate3d(' + ( currentX + hDistancePercent ) +'%, 0, 0)',
-			// 							'transform' : 'translate3d(' + ( currentX + hDistancePercent ) + '%, 0, 0)'
-			// 						} );
-			// 					}
+							// 	// last Slide
+							// 	if ( elements.length === index +1 ) {
+							// 		// console.log( 'last' );
+							// 		$( '#swipebox-overlay' ).addClass( 'rightSpringTouch' );
+							// 	} else {
+							// 		$( '#swipebox-overlay' ).removeClass( 'leftSpringTouch' ).removeClass( 'rightSpringTouch' );
+							// 		$( '#swipebox-slider' ).css( {
+							// 			'-webkit-transform' : 'translate3d(' + ( currentX + hDistancePercent ) +'%, 0, 0)',
+							// 			'transform' : 'translate3d(' + ( currentX + hDistancePercent ) + '%, 0, 0)'
+							// 		} );
+							// 	}
 
-			// 				}
-			// 			}
-			// 		} );
+							// }
+						}
+					} );
 
-			// 		return false;
+					return false;
 
-			// 	} ).bind( 'touchend',function( event ) {
-			// 		event.preventDefault();
-			// 		event.stopPropagation();
+				} ).bind( 'touchend',function( event ) {
+					event.preventDefault();
+					event.stopPropagation();
 
-			// 		$( '#swipebox-slider' ).css( {
-			// 			'-webkit-transition' : '-webkit-transform 0.4s ease',
-			// 			'transition' : 'transform 0.4s ease'
-			// 		} );
+					$( '#swipebox-slider' ).css( {
+						'-webkit-transition' : '-webkit-transform 0.4s ease',
+						'transition' : 'transform 0.4s ease'
+					} );
 
-			// 		vDistance = endCoords.pageY - startCoords.pageY;
-			// 		hDistance = endCoords.pageX - startCoords.pageX;
-			// 		hDistancePercent = hDistance*100/winWidth;
+					vDistance = endCoords.pageY - startCoords.pageY;
+					hDistance = endCoords.pageX - startCoords.pageX;
+					hDistancePercent = hDistance*100/winWidth;
 
-			// 		// Swipe to bottom to close
-			// 		if ( vSwipe ) {
-			// 			vSwipe = false;
-			// 			if ( Math.abs( vDistance ) >= 2 * vSwipMinDistance && Math.abs( vDistance ) > Math.abs( vDistanceLast ) ) {
-			// 				var vOffset = vDistance > 0 ? slider.height() : - slider.height();
-			// 				slider.animate( { top: vOffset + 'px', 'opacity': 0 },
-			// 					300,
-			// 					function () {
-			// 						$this.closeSlide();
-			// 					} );
-			// 			} else {
-			// 				slider.animate( { top: 0, 'opacity': 1 }, 300 );
-			// 			}
+					// Swipe to bottom to close
+					if ( vSwipe ) {
+						vSwipe = false;
+						// if ( Math.abs( vDistance ) >= 2 * vSwipMinDistance && Math.abs( vDistance ) > Math.abs( vDistanceLast ) ) {
+						// 	var vOffset = vDistance > 0 ? slider.height() : - slider.height();
+						// 	slider.animate( { top: vOffset + 'px', 'opacity': 0 },
+						// 		300,
+						// 		function () {
+						// 			$this.closeSlide();
+						// 		} );
+						// } else {
+						// 	slider.animate( { top: 0, 'opacity': 1 }, 300 );
+						// }
 
-			// 		} else if ( hSwipe ) {
+					} else if ( hSwipe ) {
 
-			// 			hSwipe = false;
+						hSwipe = false;
 
-			// 			// swipeLeft
-			// 			if( hDistance >= hSwipMinDistance && hDistance >= hDistanceLast) {
+						// // swipeLeft
+						// if( hDistance >= hSwipMinDistance && hDistance >= hDistanceLast) {
 
-			// 				$this.getPrev();
+						// 	$this.getPrev();
 
-			// 			// swipeRight
-			// 			} else if ( hDistance <= -hSwipMinDistance && hDistance <= hDistanceLast) {
+						// // swipeRight
+						// } else if ( hDistance <= -hSwipMinDistance && hDistance <= hDistanceLast) {
 
-			// 				$this.getNext();
-			// 			}
+						// 	$this.getNext();
+						// }
 
-			// 		} else { // Top and bottom bars have been removed on touchable devices
-			// 			// tap
-			// 			if ( ! bars.hasClass( 'visible-bars' ) ) {
-			// 				$this.showBars();
-			// 				$this.setTimeout();
-			// 			} else {
-			// 				$this.clearTimeout();
-			// 				$this.hideBars();
-			// 			}
-			// 		}
+					} else { // Top and bottom bars have been removed on touchable devices
+						// tap
+						if ( ! bars.hasClass( 'visible-bars' ) ) {
+							$this.showBars();
+							$this.setTimeout();
+						} else {
+							$this.clearTimeout();
+							$this.hideBars();
+						}
+					}
 
-			// 		$( '#swipebox-slider' ).css( {
-			// 			'-webkit-transform' : 'translate3d(' + currentX + '%, 0, 0)',
-			// 			'transform' : 'translate3d(' + currentX + '%, 0, 0)'
-			// 		} );
+					$( '#swipebox-slider' ).css( {
+						'-webkit-transform' : 'translate3d(' + currentX + '%, 0, 0)',
+						'transform' : 'translate3d(' + currentX + '%, 0, 0)'
+					} );
 
-			// 		$( '#swipebox-overlay' ).removeClass( 'leftSpringTouch' ).removeClass( 'rightSpringTouch' );
-			// 		$( '.touching' ).off( 'touchmove' ).removeClass( 'touching' );
+					$( '#swipebox-overlay' ).removeClass( 'leftSpringTouch' ).removeClass( 'rightSpringTouch' );
+					$( '.touching' ).off( 'touchmove' ).removeClass( 'touching' );
 
-			// 	} );
-			// },
+				} );
+			},
 
 			/**
 			 * Set timer to hide the action bars
