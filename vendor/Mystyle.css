@@ -114,6 +114,10 @@ p.header-caption{
 .intro{
     background-image: url("img/bg-cta.jpg") !important;
 }
+
+.card-light-bg{
+    background-color: rgba(240, 250, 228, 0.13) !important; 
+}
 .card-subtitle{
     font-family: 'Raleway' !important;
     font-weight: lighter !important;
@@ -135,7 +139,6 @@ p.header-caption{
 
 
 .carousel-inner {
-    /* margin-bottom:50px; */
  }
 
  ol.carousel-indicators {
