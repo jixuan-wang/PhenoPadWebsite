@@ -58,11 +58,10 @@
 
 		$.swipebox.close = function () {
 			ui.closeSlide();
-			document.body.style.overflow='auto';
+			document.getElementById("page-top").style.overflow = "auto";
 		};
 
 		$.swipebox.extend = function () {
-			document.body.style.overflow='hidden';
 			return ui;
 
 		};
@@ -633,6 +632,7 @@
 			 * Open slide
 			 */
 			openSlide : function ( index ) {
+				document.getElementById("page-top").style.overflow = "hidden";
 				$( 'html' ).addClass( 'swipebox-html' );
 				if ( isTouch ) {
 					$( 'html' ).addClass( 'swipebox-touch' );
