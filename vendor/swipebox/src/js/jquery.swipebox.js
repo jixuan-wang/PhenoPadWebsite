@@ -58,10 +58,13 @@
 
 		$.swipebox.close = function () {
 			ui.closeSlide();
+			document.body.style.overflow='auto';
 		};
 
 		$.swipebox.extend = function () {
+			document.body.style.overflow='hidden';
 			return ui;
+
 		};
 
 		plugin.init = function() {
