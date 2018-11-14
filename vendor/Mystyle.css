@@ -174,3 +174,8 @@ p.header-caption{
 .h-85{
     height: 85vh;
 }
+.swipebox img:hover{
+    cursor: url("../img/zoomin.png"),zoom-in;
+}
+
+

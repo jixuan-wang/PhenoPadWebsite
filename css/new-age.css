@@ -96,7 +96,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: white !important;
+  /* color: white !important; */
   background-color: transparent;
 }
 
