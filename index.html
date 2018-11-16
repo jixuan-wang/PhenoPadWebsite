@@ -205,16 +205,15 @@
               <h3 class="display-5 mb-5 noselect">Hand Writing Recognition</h3>
             </div>
 
-        <div class="d-flex flex-row justify-content-center">
-            <div class="col pr-5 pl-5" >
-
-              <div class="row">
-                <div class="card rounded shadow figure hvr-float col-5 mx-auto p-0">
+            <div class="d-flex flex-row justify-content-center mb-5">
+                <div class="card rounded shadow figure hvr-float col-lg-6 mx-auto p-0">
                   <video class="img-fluid noselect" loop autoplay muted>
                       <source src="./vid/hwr.mp4" type="video/mp4">
                     </video>    
+                </div>
               </div>
-            </div>
+
+        <div class="d-flex flex-row justify-content-center">
                 <div class="row p-3">
                   <div class="col mb-3" >
                     <figure class="card p-4 shadow figure hvr-float">
@@ -222,16 +221,16 @@
                         <img src="img/phenopad/hwr.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                       </a>
                         
-                        <figcaption class="figure-caption">Selects a line of script and auto-recognizes based on collection of strokes. Automatically displays extended form of abbreviations. </figcaption>
+                        <figcaption class="figure-caption">Auto-recognizes line strokes and displays extended form of abbreviations. </figcaption>
                     </figure>
                     <div class = "card p-4 shadow hvr-float">
-                      <div class="row ">
+                      <div class="d-flex flex-row flex-wrap ">
                         <div class="col">
                             <figure class="figure mb-2">
                                 <a data-fancybox="" href="img/phenopad/ab1.jpg">
                                   <img src="img/phenopad/ab1.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                                 </a>
-                                <figcaption class="figure-caption">Detection based on local context, a single "ca" term will result in "cardiac arrest".</figcaption>
+                                <figcaption class="figure-caption">A single "ca" term will result in "cardiac arrest".</figcaption>
 
                               </figure>    
                         </div>
@@ -241,7 +240,7 @@
 
                                 <img src="img/phenopad/ab2.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                                 </a>
-                                <figcaption class="figure-caption">Changing the local context by adding "breast" will update the abbreviation to "breast cancer". </figcaption>
+                                <figcaption class="figure-caption">Adding "breast" will update the abbreviation to "breast cancer". </figcaption>
 
                               </figure>    
                         </div>
@@ -251,22 +250,17 @@
 
                   </div>
 
-                  <div class="col mb-3" >
-                    <figure class="figure card p-4 shadow mb-5 hvr-float">
-                        <br>
-                        <br>
+                  <div class="col my-auto" >
+                    <figure class="figure card p-4 shadow hvr-float">
                         <a data-fancybox="" href="img/phenopad/nlphwr.jpg" >
                         <img src="img/phenopad/nlphwr.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                         </a>
-                        <figcaption class="figure-caption">Use natural language processing to do text mining on collected data for medical term recognition. </figcaption>
-                        <br>
-                        <br>
+                        <figcaption class="figure-caption">Use NLP to do text mining on collected data for medical term detection. </figcaption>
                     </figure>        
                   </div>
                 </div>
             </div>       
         </div>
-      </div>
     </section>
 
     <!-- SPEECH SECTION RESPONSIVE-->
@@ -274,90 +268,102 @@
         <div class="container">
             <div class="row p-3">
                 <h3 class="display-5 mb-5 noselect">Speech Audio Recognition</h3>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center mb-5">
+                <div class="card rounded shadow figure hvr-float col-lg-7 mx-auto p-0">
+                  <video class="img-fluid noselect" loop autoplay muted>
+                      <source src="./vid/speech.mp4" type="video/mp4">
+                    </video>    
+                </div>
               </div>
-
-            <div class="col pr-5 pl-5" >
-
           <div class="d-flex flex-row flex-wrap justify-content-center">
                 <div class="d-flex flex-row flex-wrap justify-content-center p-3">
-                    <div class="row mb-5">
-                        <div class="card rounded shadow figure hvr-float col-lg-9 mx-auto p-0">
-                          <video class="img-fluid noselect" loop autoplay muted>
-                              <source src="./vid/speech.mp4" type="video/mp4">
-                            </video>    
-                      </div>    
-                    </div>    
                   <div class="col-sm" style="display: inline-block;">
                       <figure class="figure mb-5 shadow p-3 img-thumbnail hvr-float">
                           <a data-fancybox="" href="img/phenopad/speech1.png">
                             <img src="img/phenopad/speech1.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                           </a>
-                          <figcaption class="figure-caption">Realtime conversation preview </figcaption>
+                          <figcaption class="figure-caption">Realtime conversation quick-view </figcaption>
                         </figure>
                   </div>
-                  <div class="col-md" style="display: inline-block;">  
+                  <div class="col-md my-auto" style="display: inline-block;">  
                     <figure class="figure mb-5 shadow p-3 img-thumbnail hvr-float">
                         <a data-fancybox="" href="img/phenopad/speech3.png" >
                           <img src="img/phenopad/speech3.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                         </a>
-                        <figcaption class="figure-caption">Saves a record for all past conversations for future reference</figcaption>
+                        <figcaption class="figure-caption">Saves transcripts of past conversations for future reference</figcaption>
                       </figure>
                       <figure class="figure mb-5 shadow p-3 img-thumbnail hvr-float">
                           <a data-fancybox="" href="img/phenopad/speech4.png">
                             <img src="img/phenopad/speech4.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                           </a>
-                            <figcaption class="figure-caption">Searches for candidate phenotypes from saved transcripts</figcaption>
+                            <figcaption class="figure-caption">Medical term detection from speech transcripts</figcaption>
                           </figure>
                   </div>
                 </div>
             </div>
           </div>
-        </div>
     </section>
 
     <!-- CLINICAL DECISION SUPPORT RESPONSIVE -->
     <section class="cds" id="CDS">
       <div class="container"> 
-          <div class="d-flex flex-row flex-wrap p-3">
-              <h3 class="display-5 noselect">Clinical Decision Support</h3>
+          <div class="row p-3">
+              <h3 class="display-5 mb-5 noselect">Clinical Decision Support</h3>
           </div>   
   
-          <div class="col pr-5 pl-5" >
 
-            <div class="row mb-5">
-                <div class="card rounded shadow figure hvr-float col-lg-9 mx-auto p-0">
-                  <video class="img-fluid noselect" loop autoplay muted>
-                      <source src="./vid/cds.mp4" type="video/mp4">
-                    </video>    
-              </div>    
+          <div class="d-flex flex-row justify-content-center mb-5">
+              <div class="card rounded shadow figure hvr-float col-lg-7 mx-auto p-0">
+                <video class="img-fluid noselect" loop autoplay muted>
+                    <source src="./vid/cds.mp4" type="video/mp4">
+                  </video>    
+              </div>
+            </div>
     
-          <div class="d-flex flex-row justify-content-center flex-wrap p-3">
-              <div class="col-sm" >
-                  <figure class="figure mb-5 shadow p-3 img-thumbnail hvr-float">
-                      <a data-fancybox="" href="img/phenopad/cds1.jpg">
-                        <img src="img/phenopad/cds1.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+              <div class="col" >
+                  <figure class="figure shadow p-3 img-thumbnail hvr-float">
+                      <a data-fancybox="" href="img/phenopad/cds1.png">
+                        <img src="img/phenopad/cds1.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                       </a>
-                      <figcaption class="figure-caption">Quickview of saved phenotypes and results of clinical decision support on side panel</figcaption>
+                      <figcaption class="figure-caption">Quickview of saved phenotypes and results from clinical decision support </figcaption>
                     </figure>
               </div>
-              <div class="col-md">
+              <div class="col my-auto">
                   <figure class="figure shadow p-3 img-thumbnail hvr-float">
+                    <br>
                       <a data-fancybox="" href="img/phenopad/cds3.jpg">
                         <img src="img/phenopad/cds3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                       </a>
-                      <figcaption class="figure-caption">Overview Panel for all saved phenotypes, phenotype suggestions and clinical decision support</figcaption>
+                      <figcaption class="figure-caption">Overview page to show all phenotypes, suggestions and clinical decision support results</figcaption>
                       <br>
+
                     </figure>
-                    <figure class="figure shadow p-3 img-thumbnail hvr-float">
-                        <a data-fancybox="" href="img/phenopad/cds2.jpg">
-                          <img src="img/phenopad/cds2.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                        </a>
-                        <figcaption class="figure-caption">Connects to external API to view detailed information of each clinical differential</figcaption>
-                      </figure>
               </div>                 
           </div>
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="col">
+              <figure class="figure shadow p-3 img-thumbnail hvr-float">
+                  <a data-fancybox="" href="img/phenopad/cds3.png">
+                    <img src="img/phenopad/cds3.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                  </a>
+                  <figcaption class="figure-caption">External API (<i> Human Phenotype Ontology </i>) for phenotype details</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure shadow p-3 img-thumbnail hvr-float">
+                    <a data-fancybox="" href="img/phenopad/cds2.png">
+                      <img src="img/phenopad/cds2.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                    </a>
+                    <figcaption class="figure-caption">External API (<i> Online Mendelian Inheritance in Man </i>) to view clinicial differential details</figcaption>
+                  </figure>
+                </div>
+
+
           </div>
-      </div>
+          </div>
     </section>
 
     <!-- ADDITIONAL FUNCTIONS RESPONSIVE -->
@@ -366,78 +372,67 @@
             <div class="row p-3">
               <h3 class="display-5 noselect">Additional Features</h3>
             </div>
-              <div class="col pr-5 pl-5" >
-                  <div class="d-flex flex-row flex-wrap p-3">
-                      <div class="row mb-5">
-                          <div class="card rounded shadow figure hvr-float col-5 mx-auto  p-0">
-                            <video class="img-fluid noselect pt-4" loop autoplay muted>
-                                <source src="./vid/addin_pedigree.mp4" type="video/mp4">
-                              </video>    
-                          </div>   
-                          <div class="card rounded shadow figure hvr-float col-4 mx-auto p-0">
+
+            <div class="d-flex flex-row justify-content-center flex-wrap p-3">
+                  <div class="col-7 mb-4 my-auto">
+                    <div class="card rounded shadow figure hvr-float pl-0 pr-0">
+                      <video class="img-fluid noselect" loop autoplay muted>
+                          <source src="./vid/addin_pedigree.mp4" type="video/mp4">
+                        </video>    
+                    </div>  
+                  </div>
+                  <div class="col mb-4 my-auto">
+                      <!-- <div class="col mb-4"> -->
+                          <div class="card rounded shadow figure hvr-float pl-0 pr-0 mb-3 mx-auto" >
                               <video class="img-fluid noselect my-auto" loop autoplay muted>
                                   <source src="./vid/addin_img.mp4"  type="video/mp4">
                                 </video>    
                             </div>   
-                        </div> 
-          
-                    <div class="row pt-3 ">
-                      <div class="col-lg-7">
-                        <div class="row">
-                          <div class="col">
-                              <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
-                                  <a data-fancybox="" href="img/phenopad/af1.jpg">
-                                    <img src="img/phenopad/af1.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                                  </a>
-                                  <figcaption class="figure-caption">Draw a square or rectangle to add a control</figcaption>
-                                </figure>
-                          </div>
-                          <div class="col">
-                              <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
-                                  <a data-fancybox="" href="img/phenopad/3.jpg">
-                                    <img src="img/phenopad/3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                                  </a>
-                                  <figcaption class="figure-caption">1. Drawing: Sketch pedigree or any other freeform diagrams</figcaption>
-                                </figure>
-                          </div>
+                        <!-- </div>  -->
+                    </div>
+            </div>
 
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                              <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
-                                  <a data-fancybox="" href="img/phenopad/2.jpg">
-                                    <img src="img/phenopad/2.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                                  </a>
-                                  <figcaption class="figure-caption">2. Insert: add local image for annotation</figcaption>
-                                </figure>
-                          </div>
-                          <div class="col">
-                              <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
-                                  <a data-fancybox="" href="img/phenopad/af3.jpg">
-                                    <img src="img/phenopad/af3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                                  </a>
-                                  <figcaption class="figure-caption">3. Take photo: with built-in camera for annotation</figcaption>
-                                </figure>
+            <div class="d-flex flex-row justify-content-center flex-wrap p-3">
+                  <div class="col mb-4">
+                      <figure class="figure img-thumbnail rounded shadow p-3 hvr-float" >
 
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1" style="background-color: transparent;"></div>
-                      <div class="col">
-                          <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
-                              <a data-fancybox="" href="img/phenopad/af2.jpg">
-                                <img src="img/phenopad/af2.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                              </a>
-                              <figcaption class="figure-caption">Minimize / Maximize controls to side dock panel</figcaption>
-                            </figure>
-                      </div>
+                          <a data-fancybox="" href="img/phenopad/af1.jpg">
+                            <img src="img/phenopad/af1.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                          </a>
 
+                          <figcaption class="figure-caption">Draw a square to add a control with 3 options</figcaption>
 
+                        </figure> 
+                  </div>
+
+                    <div class="col mb-4">
+                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
+                            <a data-fancybox="" href="img/phenopad/3.jpg">
+                              <img src="img/phenopad/3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                            </a>
+                            <figcaption class="figure-caption"> Drawing: Sketch pedigree diagrams</figcaption>
+                          </figure>
+                    </div>
+
+                    <div class="col mb-4">
+                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
+                            <a data-fancybox="" href="img/phenopad/2.jpg">
+                              <img src="img/phenopad/2.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                            </a>
+                            <figcaption class="figure-caption">Insert: Add local image for annotation</figcaption>
+                          </figure>
+                    </div>
+                    <div class="col mb-4">
+                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
+                            <a data-fancybox="" href="img/phenopad/af3.jpg">
+                              <img src="img/phenopad/af3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                            </a>
+                            <figcaption class="figure-caption">Photo: Use built-in camera to take realtime photo</figcaption>
+                          </figure>
 
                     </div>
-                  </div>
-                </div>                  
-        </div>
+                </div>
+            </div>
     </section>
 
 
