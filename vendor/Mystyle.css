@@ -175,6 +175,10 @@ p.header-caption{
 .h-85{
     height: 85vh;
 }
+
+.h-contact{
+    height: 100vh - 68;
+}
 .zoomable:hover{
     cursor: url("../img/zoomin.png"),zoom-in;
 }
