@@ -130,7 +130,7 @@ p.header-caption{
 }
 
 .card-light-bg{
-    background-color: rgba(240, 250, 228, 0.13) !important; 
+    background-color: rgba(228, 236, 250, 0.13) !important; 
 }
 .card-subtitle{
     font-family: 'Raleway' !important;
@@ -225,6 +225,9 @@ p.header-caption{
     -o-user-drag: none;
     -user-drag: none;
   }
+.video{
+    border: 4px double rgba(26, 26, 48, 0.37);
+}
 
 
 
