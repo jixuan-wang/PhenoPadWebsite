@@ -207,7 +207,7 @@
 
             <div class="d-flex flex-row justify-content-center mb-5">
                 <div class="card rounded shadow figure hvr-float col-lg-6 mx-auto p-0">
-                  <video class="img-fluid noselect" loop autoplay muted>
+                  <video id="hwrVideo" class="img-fluid noselect" loop muted>
                       <source src="./vid/hwr.mp4" type="video/mp4">
                     </video>    
                 </div>
@@ -271,24 +271,25 @@
             </div>
 
             <div class="d-flex flex-row justify-content-center mb-5">
-                <div class="card rounded shadow figure hvr-float col-lg-7 mx-auto p-0">
-                  <video class="img-fluid noselect" loop autoplay muted>
+                <div class="card rounded shadow figure hvr-float col-lg-8 mx-auto p-0">
+                  <video id="speechVideo" class="img-fluid noselect" loop muted>
                       <source src="./vid/speech.mp4" type="video/mp4">
                     </video>    
                 </div>
               </div>
+              <br>
           <div class="d-flex flex-row flex-wrap justify-content-center">
                 <div class="d-flex flex-row flex-wrap justify-content-center p-3">
                   <div class="col-sm" style="display: inline-block;">
                       <figure class="figure mb-5 shadow p-3 img-thumbnail hvr-float">
                           <a data-fancybox="" href="img/phenopad/speech1.png">
-                            <img src="img/phenopad/speech1.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                            <img src="img/phenopad/speech1.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable" style="width:85%;margin-left:9%">
                           </a>
                           <figcaption class="figure-caption">Realtime conversation quick-view </figcaption>
                         </figure>
                   </div>
                   <div class="col-md my-auto" style="display: inline-block;">  
-                    <figure class="figure mb-5 shadow p-3 img-thumbnail hvr-float">
+                    <figure class="figure shadow p-3 img-thumbnail hvr-float">
                         <a data-fancybox="" href="img/phenopad/speech3.png" >
                           <img src="img/phenopad/speech3.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                         </a>
@@ -315,8 +316,8 @@
   
 
           <div class="d-flex flex-row justify-content-center mb-5">
-              <div class="card rounded shadow figure hvr-float col-lg-7 mx-auto p-0">
-                <video class="img-fluid noselect" loop autoplay muted>
+              <div class="card rounded shadow figure hvr-float col-lg-8 mx-auto p-0">
+                <video id="cdsVideo" class="img-fluid noselect" loop muted>
                     <source src="./vid/cds.mp4" type="video/mp4">
                   </video>    
               </div>
@@ -324,44 +325,21 @@
     
           <div class="d-flex flex-row justify-content-center flex-wrap">
               <div class="col" >
-                  <figure class="figure shadow p-3 img-thumbnail hvr-float">
-                      <a data-fancybox="" href="img/phenopad/cds1.png">
-                        <img src="img/phenopad/cds1.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                  <figure class="figure shadow p-3 img-thumbnail hvr-float" style="padding-left: 10%">
+                      <a data-fancybox="" href="img/phenopad/cds1.png" >
+                        <img src="img/phenopad/cds1.png" class="figure-img rounded img-thumbnail hvr-glow zoomable" style="width:80%;margin-left:9%">
                       </a>
                       <figcaption class="figure-caption">Quickview of saved phenotypes and results from clinical decision support </figcaption>
                     </figure>
               </div>
               <div class="col my-auto">
                   <figure class="figure shadow p-3 img-thumbnail hvr-float">
-                    <br>
                       <a data-fancybox="" href="img/phenopad/cds3.jpg">
                         <img src="img/phenopad/cds3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                       </a>
                       <figcaption class="figure-caption">Overview page to show all phenotypes, suggestions and clinical decision support results</figcaption>
-                      <br>
-
                     </figure>
               </div>                 
-          </div>
-          <div class="d-flex flex-row justify-content-center flex-wrap">
-            <div class="col">
-              <figure class="figure shadow p-3 img-thumbnail hvr-float">
-                  <a data-fancybox="" href="img/phenopad/cds3.png">
-                    <img src="img/phenopad/cds3.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                  </a>
-                  <figcaption class="figure-caption">External API (<i> Human Phenotype Ontology </i>) for phenotype details</figcaption>
-                </figure>
-              </div>
-              <div class="col">
-                <figure class="figure shadow p-3 img-thumbnail hvr-float">
-                    <a data-fancybox="" href="img/phenopad/cds2.png">
-                      <img src="img/phenopad/cds2.png" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                    </a>
-                    <figcaption class="figure-caption">External API (<i> Online Mendelian Inheritance in Man </i>) to view clinicial differential details</figcaption>
-                  </figure>
-                </div>
-
-
           </div>
           </div>
     </section>
@@ -374,9 +352,9 @@
             </div>
 
             <div class="d-flex flex-row justify-content-center flex-wrap p-3">
-                  <div class="col-7 mb-4 my-auto">
-                    <div class="card rounded shadow figure hvr-float pl-0 pr-0">
-                      <video class="img-fluid noselect" loop autoplay muted>
+                  <div class="col-lg-7 mb-4 my-auto">
+                    <div class="card rounded shadow figure hvr-float pl-0 pr-0 mb-5">
+                      <video id="addinVideo1" class="img-fluid noselect" loop muted >
                           <source src="./vid/addin_pedigree.mp4" type="video/mp4">
                         </video>    
                     </div>  
@@ -384,7 +362,7 @@
                   <div class="col mb-4 my-auto">
                       <!-- <div class="col mb-4"> -->
                           <div class="card rounded shadow figure hvr-float pl-0 pr-0 mb-3 mx-auto" >
-                              <video class="img-fluid noselect my-auto" loop autoplay muted>
+                              <video id="addinVideo2" class="img-fluid noselect my-auto" loop autoplay muted>
                                   <source src="./vid/addin_img.mp4"  type="video/mp4">
                                 </video>    
                             </div>   
@@ -394,7 +372,7 @@
 
             <div class="d-flex flex-row justify-content-center flex-wrap p-3">
                   <div class="col mb-4">
-                      <figure class="figure img-thumbnail rounded shadow p-3 hvr-float" >
+                      <figure class="figure img-thumbnail rounded shadow p-3 hvr-float fixed-height" >
 
                           <a data-fancybox="" href="img/phenopad/af1.jpg">
                             <img src="img/phenopad/af1.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
@@ -405,8 +383,8 @@
                         </figure> 
                   </div>
 
-                    <div class="col mb-4">
-                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
+                    <div class="col mb-4 fixed-height">
+                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float fixed-height">
                             <a data-fancybox="" href="img/phenopad/3.jpg">
                               <img src="img/phenopad/3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                             </a>
@@ -414,20 +392,20 @@
                           </figure>
                     </div>
 
-                    <div class="col mb-4">
-                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
+                    <div class="col mb-4 fixed-height">
+                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float fixed-height">
                             <a data-fancybox="" href="img/phenopad/2.jpg">
                               <img src="img/phenopad/2.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                             </a>
                             <figcaption class="figure-caption">Insert: Add local image for annotation</figcaption>
                           </figure>
                     </div>
-                    <div class="col mb-4">
-                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float">
+                    <div class="col mb-4 fixed-height">
+                        <figure class="figure img-thumbnail rounded shadow p-3 hvr-float fixed-height">
                             <a data-fancybox="" href="img/phenopad/af3.jpg">
                               <img src="img/phenopad/af3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
                             </a>
-                            <figcaption class="figure-caption">Photo: Use built-in camera to take realtime photo</figcaption>
+                            <figcaption class="figure-caption">Photo: Use built-in camera to take photos</figcaption>
                           </figure>
 
                     </div>
@@ -437,7 +415,7 @@
 
 
     <!-- CONTACT PAGE RESPONSIVE -->
-    <section class="contact h-100"  id="contact">
+    <section class="contact"  id="contact">
         <div class="d-flex flex-row justify-content-center">
           <div class="col-lg-6 mx-auto mb-3">
               <h2 class="display-4 noselect" style="color:whitesmoke !important">
@@ -475,7 +453,7 @@
 
           </div> -->
         </div>
-      </div>
+        </div>
     </section>
     <!-- FOOTER RESPONSIVE-->
     <footer>

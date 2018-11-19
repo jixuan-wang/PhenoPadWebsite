@@ -60,6 +60,16 @@
     }
 
 }
+@media (min-width: 1280px){
+
+    .btn-outline-black{
+        width:40%;
+        align-self: center;
+        align-items: center;
+    }
+
+
+}
 section.contact{
     color:aliceblue;
     /* background-image: linear-gradient(to right bottom, rgb(22, 155, 196) , rgb(243, 221, 23)) !important; */
@@ -197,6 +207,14 @@ p.header-caption{
      user-select: none;          /* Non-prefixed version, currently 
                                     not supported by any browser */
   }
+
+.figure-caption{
+    color: rgb(18, 18, 32) !important;
+    font-size:95%;
+}
+.fixed-height{
+    height: 17rem;
+}
   
   /* Disables the drag event 
   (mostly used for images) */
@@ -207,4 +225,6 @@ p.header-caption{
     -o-user-drag: none;
     -user-drag: none;
   }
+
+
 
