@@ -84,8 +84,8 @@
         </div>
         <div class="d-flex flex-row d-flex flex-row justify-content-center">
           <div class="col-lg-6 mx-auto">
-            <p class="text-light stretch">For every hour that physicians spend on direct patient care, they spend 2 hours on administrative tasks and EHR documentations.
-              This causes growing dissatisfaction and burnout amount physicians, decreasing the quality of care that they are able to provide to patients.
+            <p class="text-light stretch">
+              For every hour that physicians spend on direct patient care, they spend 2 hours on administrative tasks and EHR documentations. This causes growing dissatisfaction and burnout amount physicians, decreasing the quality of care that they are able to provide to patients.
               <br><br>
               The goal of the PhenoPad project is to provide convenient and efficient clinical note taking during physician-patient interactions through the use of AI.
             </p>
@@ -195,11 +195,11 @@
     <!-- HWR SECTION RESPONSIVE -->
     <section class="hwr" id="HWR">
       <div class="container">
-          <div class="row p-3">
+          <div class="row p-3 mb-5">
               <h3 class="display-5 mb-5 noselect">Hand Writing Recognition</h3>
             </div>
 
-            <div class="row flex-row  justify-content-center">
+            <div class="row flex-row  justify-content-center mb-5">
               <div class="col-lg-6 mb-5">
                 <div class="card rounded video shadow my-auto p-0">
                   <video id="hwrVideo" class="img-fluid noselect" loop playsinline muted>
@@ -209,9 +209,16 @@
               </div>
                 <div class="col-lg-6 mb-5">
                   <p class="stretch" style="font-size: 16px;">
-                      &nbsp;When a doctor writes down a line of script, Phenopad immediately captures the line and recognizes it using medical language model. Once done analyzing, it displays a text bar above the script with the recognized text. Alternative candidates for each recognized word are also provided for the doctor to correct any spelling or semantic mistakes.</p>
+                      &nbsp;<b style="color: #3e7bdd">When</b> a doctor writes down a line of script, Phenopad immediately captures the line and recognizes it
+                      using medical language model. Once done analyzing, it displays a text bar above the script with the recognized 
+                      text. Alternative candidates for each recognized word are also provided for the doctor to correct any spelling 
+                      or semantic mistakes.
+                    </p>
                   <p class="stretch" style="font-size: 16px;">
-                      &nbsp;&nbsp;At the same time, the NLP detects any potential abbreviations, and returns their extended forms on a local-context-based priority ranking. NLP will also search for key medical terms and displays all candidate phenotypes found in the text as togglable tags. The doctor can choose to add or delete phenotypes or switching their states as Yes/No, which indicates whether the patient presents the existence of the specific phenotypes.
+                      &nbsp;&nbsp;At the same time, the NLP detects any potential abbreviations and returns the extended forms 
+                      based on local context. NLP will also search for key medical terms and displays all candidate phenotypes 
+                      found in the text as togglable tags. The doctor can choose to add or delete phenotypes or switching their 
+                      states as Yes/No, which indicates whether the patient presents the existence of the specific phenotypes.
                   </p>
                 </div>
               </div>
@@ -269,22 +276,29 @@
     <!-- SPEECH SECTION RESPONSIVE-->
     <section class="speech" id="Speech">
         <div class="container">
-            <div class="row p-3">
-                <h3 class="display-5 mb-5 noselect">Speech Audio Recognition</h3>
-            </div>
+          <div class="row p-3 mb-5">
+              <h3 class="display-5 mb-5 noselect">Speech Audio Recognition</h3>
+          </div>
 
-            <div class="d-flex flex-row justify-content-center">
-                <div class="col-lg-4 mb-5 my-auto">
-                    <p class="stretch" style="font-size: 16px;">
-                        &nbsp&nbspInstead of jotting down the sentences, the doctor can also choose to record the session. Phenopad provides convenient speech audio service which processes and identifies different speakers using deep learning approach, then displays the transcripts on side for quick reference. The NLP will also search through the transcript to detect any key medical terms and suggests all candidate phenotypes. All transcripts of past conversations are also saved locally, which allows the doctor to recapture any missed patient information through a single click.                      </p>
-                  </div>
-                  <div class="card rounded video shadow col-lg-7 mx-auto mb-5 p-0">
-                      <video id="speechVideo" class="img-fluid noselect" loop playsinline muted>
-                          <source src="./vid/speech.mp4" type="video/mp4">
-                        </video>    
-                    </div>    
+          <div class="row flex-row justify-content-center mb-5">
+              <div class="col-lg-4 mb-5 my-auto">
+                <p class="stretch" style="font-size: 16px;">
+                    &nbsp;<b style="color: #3e7bdd">Instead</b> of jotting down the sentences, the doctor can also choose to record the session. 
+                    Phenopad provides convenient speech audio service which processes and identifies different speakers using 
+                    deep learning approach, then displays the transcript on side for quick reference. 
+                    The NLP will also search through the transcript to detect any key medical terms and suggests all candidate 
+                    phenotypes. 
+                    All transcripts of past conversations are also saved locally, which allows the doctor to recapture any 
+                    missed patient information through a single click.
+                </p>
               </div>
-              <br>
+              <div class="card rounded video shadow col-lg-7 mx-auto mb-5 p-0">
+                <video id="speechVideo" class="img-fluid noselect" loop playsinline muted>
+                    <source src="./vid/speech.mp4" type="video/mp4">
+                </video>    
+              </div>    
+          </div>
+          <br>
           <div class="d-flex flex-row flex-wrap justify-content-center">
                 <div class="d-flex flex-row flex-wrap justify-content-center p-3">
                   <div class="col-sm" style="display: inline-block;">
@@ -310,49 +324,50 @@
                           </figure>
                   </div>
                 </div>
-            </div>
           </div>
+        </div>
     </section>
 
     <!-- CLINICAL DECISION SUPPORT RESPONSIVE -->
     <section class="cds" id="CDS">
       <div class="container"> 
-          <div class="row p-3">
+          <div class="row p-3 mb-5">
               <h3 class="display-5 mb-5 noselect">Clinical Decision Support</h3>
           </div>   
   
-
-          <div class="d-flex flex-row justify-content-center ">
+          <div class="row flex-row justify-content-center mb-5">
               <div class="card rounded video shadow col-lg-7 mx-auto mb-5 p-0">
                 <video id="cdsVideo" class="img-fluid noselect" loop playsinline muted>
-                    <source src="./vid/cds.mp4" type="video/mp4">
+                  <source src="./vid/cds.mp4" type="video/mp4">
                   </video>    
               </div>
               <div class="col-lg-4 mb-5 pl-3 pr-3 my-auto">
-                  <p class="stretch" style="font-size: 16px;">
-                    &nbsp&nbspWhen the doctor changes the state of a candidate phenotype to "Yes", Phenopad automatically performs analysis and provides a list of highly related phenotypes as investigate suggestion. Meanwhile, the NLP determines the diseases that are most commonly found based on the collected phenotypes, and list them out as a clinical decision support to the doctor.
-                    In addition, the doctor has the option to view detailed information of each phenotype and disease, which all information are retrieved from authorized database APIs.  
-                  </p>
+                <p class="stretch" style="font-size: 16px;">
+                  &nbsp;<b style="color: #3e7bdd">When</b> the doctor changes the state of a candidate phenotype to "Y", 
+                  Phenopad automatically performs analysis and provides a list of related phenotypes as further investigate suggestion. 
+                  Meanwhile, it also determines the diseases that are most commonly found based on the collected phenotypes, and list 
+                  them out as a clinical diagnosis reference to the doctor. The doctor has the option to view detailed information of each phenotype and disease through an external extension where all information is retrieved from authorized database APIs.  
+                </p>
             </div>
             </div>
     
           <div class="d-flex flex-row justify-content-center flex-wrap">
-              <div class="col" >
-                  <figure class="figure shadow p-3 img-thumbnail hvr-float" style="padding-left: 10%">
-                      <a data-fancybox="" href="img/phenopad/cds/cds1.png" >
-                        <img src="img/phenopad/cds/cds1.png" class="figure-img rounded img-thumbnail hvr-glow zoomable" style="width:80%;margin-left:9%">
-                      </a>
-                      <figcaption class="figure-caption">Quickview of saved phenotypes and results from clinical decision support </figcaption>
-                    </figure>
-              </div>
-              <div class="col my-auto">
-                  <figure class="figure shadow p-3 img-thumbnail hvr-float">
-                      <a data-fancybox="" href="img/phenopad/cds/cds3.jpg">
-                        <img src="img/phenopad/cds/cds3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
-                      </a>
-                      <figcaption class="figure-caption">Overview page to show all phenotypes, suggestions and clinical decision support results</figcaption>
-                    </figure>
-              </div>                 
+            <div class="col" >
+              <figure class="figure shadow p-3 img-thumbnail hvr-float" style="padding-left: 10%">
+                  <a data-fancybox="" href="img/phenopad/cds/cds1.png" >
+                    <img src="img/phenopad/cds/cds1.png" class="figure-img rounded img-thumbnail hvr-glow zoomable" style="width:80%;margin-left:9%">
+                  </a>
+                  <figcaption class="figure-caption">Quickview of saved phenotypes and results from clinical decision support </figcaption>
+              </figure>
+            </div>
+            <div class="col my-auto">
+              <figure class="figure shadow p-3 img-thumbnail hvr-float">
+                  <a data-fancybox="" href="img/phenopad/cds/cds3.jpg">
+                    <img src="img/phenopad/cds/cds3.jpg" class="figure-img img-fluid rounded img-thumbnail hvr-glow zoomable">
+                  </a>
+                  <figcaption class="figure-caption">Overview page to show all phenotypes, suggestions and clinical decision support results</figcaption>
+              </figure>
+            </div>                 
           </div>
           </div>
     </section>
@@ -360,11 +375,11 @@
     <!-- ADDITIONAL FUNCTIONS RESPONSIVE -->
     <section class="extra" id="EXTRA">
         <div class="container">      
-            <div class="row p-3">
+            <div class="row p-3 mb-5">
               <h3 class="display-5 mb-5 noselect">Additional Features</h3>
             </div>
 
-            <div class="d-flex flex-row justify-content-center flex-wrap p-3">
+            <div class="row flex-row justify-content-center flex-wrap p-3">
                   <div class="col-lg-7 mb-4 my-auto">
                     <div class="card rounded video shadow pl-0 pr-0 mb-5">
                       <video id="addinVideo1" class="img-fluid noselect" loop playsinline muted >
@@ -384,7 +399,7 @@
             <div class="row flex-row justify-content-center p-3">
               <div class="col-lg-7">
                   <p class="stretch" style="font-size: 16px;">
-                      Phenopad also provides the add-in feature, which allows the doctor to add a widget by drawing a square or rectangle on the note page. The add-in widget contains three different modes that support drawing pedigree diagrams, inserting images from local and taking a phone for annotations. All add-in widgets also support resizing and repositioning, and can be minimized into side bar if the note page has run out of writing space.
+                      <b style="color: #3e7bdd">Phenopad</b> also provides the add-in feature which allows the doctor to add a widget by drawing a square or a rectangle on the note page. The add-in widget gives three different options that support drawing pedigree diagrams, inserting local images and taking photos for annotations. All add-in widgets also support resizing and repositioning, and can be minimized into side bar if the note page has run out of writing space.
                     </p>
                 </div>
             </div>
