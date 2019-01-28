@@ -12,6 +12,6 @@ app.get('/', function(req, res) {
     res.send(__dirname+'/index.html')
 });
 app.get("/m", function(req, res) {
-    res.send(__dirname+'/manual.html')
+    res.send(__dirname+'/index.html')
 });
 app.listen(port, () => console.log(`App listening on port ${port}!`))
