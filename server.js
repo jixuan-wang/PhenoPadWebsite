@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 7000
+const port = 80
 const path = '/home/hnakxr/PhenoPadWebsite/'
 
 app.use(express.static(__dirname ))
