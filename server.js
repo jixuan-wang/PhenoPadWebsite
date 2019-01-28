@@ -11,8 +11,7 @@ app.use(express.static(__dirname ))
 app.get('/', function(req, res) {
     res.send(__dirname+'/index.html')
 });
-app.get("/m", function(req, res) {
-    console.log("requested manual")
+app.get("m", function(req, res) {
     res.send(__dirname+'/manual.html')
 });
 app.listen(port, () => console.log(`App listening on port ${port}!`))
