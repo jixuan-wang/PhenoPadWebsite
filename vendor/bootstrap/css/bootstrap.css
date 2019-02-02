@@ -549,8 +549,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -569,13 +569,13 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 860px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1045px;
   }
 }
 
@@ -5837,6 +5837,9 @@ button.close {
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  max-width: 100%;
+  height: auto;
+
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -5844,6 +5847,10 @@ button.close {
   .carousel-item-next,
   .carousel-item-prev {
     transition: none;
+    max-width: 100%;
+    height: auto;
+
+
   }
 }
 
@@ -5851,12 +5858,16 @@ button.close {
 .carousel-item-prev {
   position: absolute;
   top: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .carousel-item-next.carousel-item-left,
 .carousel-item-prev.carousel-item-right {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  max-width: 100%;
+  height: auto;
 }
 
 @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
@@ -5864,6 +5875,8 @@ button.close {
   .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -5871,6 +5884,9 @@ button.close {
 .active.carousel-item-right {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+  max-width: 100%;
+  height: auto;
+
 }
 
 @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
@@ -5878,6 +5894,8 @@ button.close {
   .active.carousel-item-right {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -5885,6 +5903,9 @@ button.close {
 .active.carousel-item-left {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
+  max-width: 100%;
+  height: auto;
+
 }
 
 @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
@@ -5892,6 +5913,8 @@ button.close {
   .active.carousel-item-left {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+    max-width: 100%;
+    height: auto;
   }
 }
 

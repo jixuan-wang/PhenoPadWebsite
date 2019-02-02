@@ -627,8 +627,8 @@
         this._items = null;
         this._interval = null;
         this._activeElement = null;
-        this._isPaused = false;
-        this._isSliding = false;
+        this._isPaused = false; //modified to pause carousel at beginning
+        this._isSliding = true;
         this.touchTimeout = null;
         this._config = this._getConfig(config);
         this._element = $$$1(element)[0];
@@ -650,6 +650,10 @@
       _proto.nextWhenVisible = function nextWhenVisible() {
         // Don't call next when the page isn't visible
         // or the carousel or its parent isn't visible
+        var bodyRect = document.body.getBoundingClientRect(),
+            elemRect = $$$1(this._element).getBoundingClientRect(),
+            offset   = elemRect.top - bodyRect.top;
+
         if (!document.hidden && $$$1(this._element).is(':visible') && $$$1(this._element).css('visibility') !== 'hidden') {
           this.next();
         }
