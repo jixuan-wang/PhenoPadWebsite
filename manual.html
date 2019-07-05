@@ -56,8 +56,9 @@
                         </video>  
                   </div>
                   <div style="padding: 5px;">
-                    <li> Write notes as usual, any phenotypes found will show up along with text recognition of the line. </li>                
-                    <li>Clicking on the phenotype will indicate the presence of this symptom.Clicking again will indicate the absence of the symptom.</li>
+                    Write notes as usual, any phenotypes found will show up along with text recognition of the line.                 
+                    Click on the phenotype to indicate the presence of this symptom (Y state).
+                    Click again will indicate the absence of the symptom (N state).
                 </div>
               </div>
               <div class="col-lg-6 mb-5">
@@ -108,7 +109,7 @@
                             </video>  
                       </div>
                       <div style="padding: 5px;">
-                            &#8679; Tap on a block / line of written script by finger to re-recognize handwriting and re-extract phenotypes from that line.
+                            Tap on a block / line of written script by finger to re-recognize handwriting and re-extract phenotypes from that line.
                             Press the side button of the pen to select parts of handwritings for recognition and phenotype extraction
                         </div>
 
@@ -120,7 +121,7 @@
                                 </video> 
                         </div>
                         <div style="padding: 5px;">
-                                &#8679; Hold the side button of the pen to select a part of a line for re-recognition and phenotype searching. 
+                                Hold the side button of the pen to select a part of a line for re-recognition and phenotype searching. 
                             </div>
 
                     </div>
@@ -133,25 +134,21 @@
                             <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
                                 <source src="./vid/ManualVids_edited/hw8.mov" type="video/mp4">
                               </video>  
-                              <div style="padding: 5px;">
-                                  Browse the left side panel to view or modify the collected phenotypic information.
-                              </div>
                         </div>
+                        <div style="padding: 5px;">
+                            Browse the left side panel to view or modify the collected phenotypic information.
+                        </div>
+
                     </div>
                     <div class="col-lg-6 mb-5">
-                        <b style="font-size: 16pt">Adding phenotypic information
-                          </b>
-                          
-                            <ul class="mt-5">
-                              <li> You have to click on the phenotype name (either from dropdown list or candidate list) to add a phenotype.
-                              </li>
-                              <li> Switch between states (Y/N) of phenotypes symptoms, Y for present, N for absence.
-                              </li>
-                              <li>
-                                The suggested phenotypes and differential diagnosis will update once phenotypic information is changed.
-                              </li>
-                            </ul>
-                          </p>
+                        <div class="card rounded video shadow my-auto p-0">
+                            <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
+                                <source src="./vid/ManualVids_edited/hw27.mov" type="video/mp4">
+                              </video>  
+                        </div>
+                        <div style="padding: 5px;">
+                            Browse the left side panel to view or modify the collected phenotypic information.
+                        </div>
                     </div>
                   </div>
 
@@ -191,8 +188,69 @@
       </div>
     </section>
 
+    <section class="speech" id="TextRecognition">
+      <div class="container">
+          <div class="row p-3 mb-5">
+              <h3 class="display-5 mb-5 noselect">Editing Recognized Text</h3>
+            </div>
+
+
+            <div class="row flex-row  justify-content-center mb-5">
+              <div class="col-lg-6 mb-5">
+                  <div class="card rounded video shadow my-auto p-0 mb-3">
+                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
+                          <source src="./vid/ManualVids_edited/hw23.mp4" type="video/mp4">
+                        </video>  
+                  </div>
+                  <div style="padding: 5px;">
+                    <li>All written notes are converted to text words in background, 
+                      user can toggle between EDIT/VIEW mode to see both raw writtings and the text</li>                
+                    <li>Clicking on the recognized word block will do the same as changing word candidates</li>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-5">
+                <div class="card rounded video shadow my-auto p-0 mb-3">
+                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
+                          <source src="./vid/ManualVids_edited/hw24.mp4" type="video/mp4">
+                        </video> 
+                </div>
+                <div style="padding: 5px;">
+                    <li> Tapping on a word in EDIT mode will instantly display alternatives for modification, 
+                      double tapping will auto analyze a phrase for potential phenotypes</li>
+                </div>
+                </div>
+            </div>
+
+                <div class="row flex-row  justify-content-center mb-5">
+                    <div class="col-lg-6 mb-5">
+                        <div class="card rounded video shadow my-auto p-0">
+                            <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
+                                <source src="./vid/ManualVids_edited/hw25.mp4" type="video/mp4">
+                              </video>  
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <b style="font-size: 16pt">Manully revising incorrect recognized text
+                          </b>
+                          
+                            <ul class="mt-5">
+                              <li> In case that all recognized alternatives are incorrect, the user can choose to manually revise recognized text.
+                              </li>
+                              <li> Input by clicking on the text input field and write (or type in keyboard) in the text for correction.
+                              </li>
+                              <li>
+                                The results will be immediately recorded and queried for phenotype analysis.
+                              </li>
+                            </ul>
+                          </p>
+                    </div>
+                  </div>               
+
+      </div>
+    </section>
+
     <!-- ehr-->
-    <section class="speech" id="Speech">
+    <section class="hwr" id="EHR">
       <div class="container">
         <div class="row p-3 mb-5">
             <h3 class="display-5 mb-5 noselect">Editing on History Records</h3>
